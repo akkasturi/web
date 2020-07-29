@@ -1,3 +1,32 @@
+
+<!doctype html>
+<html lang="en-GB" dir="ltr">
+<head>
+    <!-- Meta elements inside the head only. It is the information
+         that browser need to know. 
+    -->
+    <title> Learning HTML </title>
+<meta charset="utf-8"/>    
+<link rel="stylesheet" type="text/css" href="css/styled.css">
+</head>
+<body>
+    <!-- body's different sections:
+        main
+        header
+        footer
+        article
+        section
+        aside
+    -->
+<blockquote style="color:tomato;">
+<pre>
+    <strong>There are multiple ways to present a thing in HTML. Learning HTML is all about which is the 
+    best way for information at hand. 
+    
+    And this boils down to what HTML Elements combination to use !</strong>
+</pre>
+    <cite>Amit Kasturi</cite>
+</blockquote>
 <h1> Heading One! </h1> 
 <h2>Heading <i>is </i> <em>important</em></h2>
 <h3>Heading</h3>
@@ -19,3 +48,304 @@
     <li>Two</li>
     <li>another number</li>
 </ul>
+
+<!-- Ordered List -->
+<ol>
+    <li>one</li>
+    <li>Two</li>
+    <li>another number</li>
+</ol>
+
+
+<!-- Definition/Description  List 
+    Definition Term
+    Definition Description.
+    Sort of Key value thing.
+-->
+<dl>
+    <dt>Key1</dt>
+    <dd>Value 1</dd>
+    <dd>Value One</dd>
+    
+    <dt>Key 2</dt>
+    <dd>Value 2</dd>
+
+    <dt>A new Key</dt>
+    <dd>Many Meaning</dd>
+    <dd> Meaning 1</dd>
+    <dd> meaning 2</dd>
+    <dd> meaning N</dd>
+
+</dl>
+<!-- 
+    Block leve elements e.g. <p> <ul> <blockquote>
+    Inline elements e.g. <b> <i> etc.
+-->
+<!-- Quotes -->
+<blockquote>
+<p>
+    A paragraph which has some text, said <q>the owl.</q>
+
+    <cite>-- unknown wisdom</cite>
+</p>
+</blockquote>
+
+
+<!-- code -->
+<p>
+    It all started with <code>printf("Hello World!");</code>
+</p>
+
+<!-- HTML entities &lt; &gt; &amp; 
+ &copy; &trace; &npsp;
+-->
+<p>
+    <li>Can't print <h> without &lt;h&gt;. Check the output first h is missing as it is interpreted as HTML entity.
+    </li>
+    <li>&copy;</li>
+    <li>&star;</li>
+
+</p>
+
+<!-- break the line -->
+<p>
+    How to write a <br>
+    text with line breaks.<br>
+    Do you know?<br>
+    Yes, I Do!<br>
+</p>
+
+<!-- let the formatting as it is using <pre> -->
+
+<li>>></li>
+<pre>
+    ------------------------------------
+    Following example shows
+    a good indented code. 
+    like
+        this
+            okay!
+    <code>
+        #int main()
+        {
+            if(1)
+            {
+                printf("I'll be there always!");
+            }else {
+                printf("Never say never!")
+            }
+        }
+    </code>
+    ------------------------------------
+</pre>    
+
+<li>>></li>
+<!-- a good example of pre and & -->
+<pre>
+    <code>
+    &lt;ul&gt;
+      &lt;li&gt;flour&lt;/li&gt;
+      &lt;li&gt;sugar&lt;/li&gt;
+      &lt;li&gt;salt&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    
+    ul {
+       color: teal;
+    }
+    li {
+       list-style-type: square;
+    }
+    </code>
+</pre>
+
+<li>>></li>
+<p>
+    Subscript : H<sub>2</sub>O <br>
+    Superscript: log<sub>2</sub> <sup>6</sup> <br>
+    Doing lots of these? Checkout MathML. <br> <br>
+    <small>Some Important text that we don't want 
+        anyone to pay attention to. </small>
+</p>
+
+
+
+<!-- naming and setting id to HTML elements -->
+
+<p class="description" id="main-desc">
+    First level of description.
+</p>
+
+<!-- anchor href link -->
+
+<li>>></li>
+<a href="learn.html">This file only</a> <br/>
+<a href="https://www.google.com">Google Baba</a> <br>
+<a href="test/level2/level2_1/index.html"> relative path example</a>
+
+<br>
+<li>>></li>
+<!-- Navigation Bar. The main menu kind of thing -->
+<nav role="navigation" aria-label="main menu">
+    <ul class="navbar">
+      <li><a href="/">Home</a></li>
+      <li><a href="/people">People</a></li>
+      <li><a href="/prices">Prices</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+  <br>
+  <li>>></li>
+  <nav role="breadcrumb">
+    <ol class="breadcrumbs">
+      <li><a href="/">Home</a></li>
+      <li><a href="/people">Blog</a></li>
+      <li><a href="/contact">March</a></li>
+      <li>March 9th Update</li>
+    </ol>
+  </nav>
+  
+  <br>
+  <li>>></li>
+
+  <footer>
+    <a href="/about/privacy">Privacy Policy</a>
+    <a href="/about/legal">Terms of Service</a>
+    <a href="/about/legal">Another Thing</a>
+  </footer>
+
+  <!--
+      Images
+      mentioning width and height helps browser better place the image. 
+       It also solves that jumping image problem when we scroll through page.
+       Image types to use:
+        gif
+        jpg
+        svg
+        png
+    srcset : comma separeted list to different resolutions of same image.
+             Browser 'll be load it  accroding to screen's resolution.
+     sizes: gives idea to browser about size of picture in pixles, that way
+            browser can select the right resolution file based on viewport 
+            instead of screen size.        
+  -->
+  <br>
+  <li>>></li>
+  <img src="img/logo.png" 
+        alt="Google Logo" 
+        width="220" 
+        height="100"/>
+
+        <!--
+<li>>></li>
+
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg" 
+		 alt="shiny black dog looking pensive" 
+		 width="480" height="360"
+     srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg  480w, 
+	   	  	   https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg  960w, 
+	   	  	   https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 1440w, 
+		 				 https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 1920w" 
+>
+-->
+
+<!-- picture : based on screen resolution use different image. -->
+<li>>></li>
+<picture>
+    <source media="(min-width: 650px)" srcset="img/img_food.jpg">
+    <source media="(min-width: 465px)" srcset="img/img_car.jpg">
+    <img src="img/img_girl.jpg">
+  </picture> 
+
+<!-- Use a <figure> element to mark up a photo in a document, 
+    and a <figcaption> element to define a caption for the photo:
+    -->
+    <li>>></li>    
+    <figure>
+        <img src="img/img_girl.jpg" alt="Trulli" style="width:100%">
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure> 
+
+    <!--
+        iframe ; embedd other site content. be careful about security here.
+    -->
+    <!-- lang, dir , charset universal attributes related to languages. -->
+
+<!-- form -->
+<br>
+<form action="test/get_success.html" method="GET">
+    <!-- tie up label and input together using for/id -->
+    <label for="username">Name </label>
+    <input id="username" name="name" type="text" value="AlreadyFilledName">
+    <br>
+    <label for="useremail">Email </label>
+    <input id="useremail" name="email" type="email" placeholder="me@example.com">
+    <br>
+    <!-- another way to tie up lable and input. -->
+    <lable >Mobile
+        <input type="tel" name="mobilenumber" required></input>
+    </lable>
+    <br>
+    <lable >File
+        <input type="file" name="file" ></input>
+    </lable>
+    <br>
+    <lable >Colour
+        <input type="color" name="color" ></input>
+    </lable>
+    <br>
+    <lable >Date
+        <input type="date" name="date" ></input>
+    </lable>
+
+    <button type="submit">Sign up!</button>
+</form>
+
+<br>
+<li>>></li>
+<!-- table, table row, table header, table data -->
+<table class="styled">
+    <tr>
+      <th>Bird</th>
+      <th>Color</th>
+      <th>Diet</th>
+      <th>Photo</th>
+    </tr>
+    <tr>
+      <td>American Goldfinch</td>
+      <td>yellow</td>
+      <td>Mostly seeds.</td>
+      <td><img src="img/american-goldfinch.jpg" alt="american-goldfinch" width="360" height="261" ></td>
+    </tr>
+    <tr>
+      <td>Bluejay</td>
+      <td>blue</td>
+      <td>Omnivorous.</td>
+      <td><img src="img/blue-jay.jpg" alt="" width="360" height="529" ></td>
+    </tr>
+    <tr>
+      <td>Indigo Bunting</td>
+      <td>blue</td>
+      <td>Mostly seeds and insects.</td>
+      <td><img src="img/indigo-bunting.jpg" alt="" width="360" height="255" ></td>
+    </tr>
+    <tr>
+      <td>Northern Cardinal</td>
+      <td>red</td>
+      <td>Seeds, insects, berries.</td>
+      <td><img src="img/northern-cardinal.jpg" alt="" width="360" height="240" ></td>
+    </tr>
+    <tr>
+      <td>Tufted Titmouse</td>
+      <td>grey</td>
+      <td>Mostly insects.</td>
+      <td><img src="img/tufted-titmouse.jpg" alt="" width="360" height="531" ></td>
+    </tr>
+  </table>
+</body>
+</html>
+
+
+
+
+ 
